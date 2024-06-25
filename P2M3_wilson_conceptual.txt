@@ -1,0 +1,54 @@
+1. Explain what NoSQL is using your understanding!
+    - NoSQL is an acronym for not-only NoSQL
+    - It's a database system that stores its data in a non-structured manner
+    - Instead of tables with rows and columns, it stores data in documents with keys and values (json-like)
+    - It's more flexible and scalable (horizontally), especially for large amount of data and user
+
+2. Explain when to use NoSQL and Relational Database Management System!
+    - When our data is unstructured and or semi-structured (image, sound, json-like), because NoSQL has,
+        - better flexibility (stores/collections of "things" instead of rigid schemas)
+    - When we have massive amount of data, because NoSQL has,
+        - better horizontal scaling (key-value pairs instead of rows and columns)
+    - WHen we have large amount of data and user, because NoSQL has, 
+        - faster queries (informations are stored in one record instead of scattered in multiple tables)
+
+3. Give examples of 2 NoSQL tools/platforms other than ElasticSearch and their advantages!
+    - MongoDB
+        - advantages:
+            - More familiarity with relational database (familiar query language and rows & columns but with no rigid schemas)
+            - Uses less RAM because it's on-disk instead of in-memory (also supports in-memory database, but only in MongoDB Enterprise Edition)
+            - More powerful query because of its query language
+            - Available on Solaris (also available on Windows, Mac, Linux)
+            - Works great for general purposes
+    - Redis
+        - advatages:
+            - More flexibility, because it uses key-value stores and able to use various other data structures
+            - Faster because it's an in-memory database
+            - Faster query because of key-value simplicity
+            - Available on BSD (also available on Windows, Mac, Linux)
+            - Has more customization capability
+
+4. Explain what you know about Airflow using your own understanding and language!
+    - It can create workflows where our batches of data can go through various technologies and processes 
+    - We can develop, schedule, and monitor these workflows with Airflow
+    - These workflows are defined in Python in a form of DAG that contains various tasks that will be executed in specified order and schedule
+
+5. Explain what you know from Great Expectations using your own understanding and language!
+    - It is a data validation platform, where we can set expectations/tests that our data will go through
+    - We can save these set of expectations in an expectation suite that can be used to test another data
+    - It can generate human-readable documentation of expectations and errors
+    - There's a cloud version and oss version (with python/jupyter notebook)
+    - Can be a part in an airflow's DAG
+
+6. Explain what you know from Batch Processing using your own understanding and language (Definition, Example Use Cases, Tools, etc.) !
+    - Definition:
+        - A type of data processing where data is collected into a large batches periodically, processed, and then stored
+    - Use cases:
+        - Employee payroll, where a batch processing system handles the payroll of employees on each scheduled time
+        - Credit card billing, where customers get a monthly credit card bill that is handled by batch processing system
+        - Orders, where a batch processing system handles the orders that come in, and process the confirmation, shipping, etc.
+    - Tools:
+        - Processing: Spark, Pig, Hive, Python, and U-SQL
+        - Storing: Hive, Hbase, SQL Data Warehouse, MongoDB, DynamoDB, Spark SQL
+        - Reporting and Analytics: Python, Power BI, Azure Analysis Service
+        - Arranging: Oozie, Sqoop and Azure Data Factory

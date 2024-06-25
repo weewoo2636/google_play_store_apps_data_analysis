@@ -1,0 +1,1 @@
+In this project, instead of using ddl in postgres, we used airflow's DAG in python to load the source data to postgres in file -> 'P2M3_wilson_DAG.py'
